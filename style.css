@@ -1,0 +1,9 @@
+.target {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: lime;
+    top: 100px;
+    left: 100px;
+    display:none;
+}
