@@ -12,6 +12,47 @@
 <br>
   Text Sample
 </div>
+    
+    <div class="nav">
+   <ul style="width: 10px;">
+      <li class="tab1">
+         <a href="#1" class="current">Welcome</a>
+      </li>
+      <li class="tab2">
+         <a href="#2">About</a>
+      </li>
+      <!-- and some lists more -->
+   </ul>
+</div>
+    
+    <input type='button' id='previous' value='Left' />
+<input type='button' id='next' value='Right' />
+<div style="width:100%;">   
+    <div class="header">Section Title</div>
+        <div style="float:left;">
+            <table style="color:#666;" align="right">
+                <tr><td align="right">Label 1</td></tr>
+                <tr><td align="right">Label 2</td></tr>
+                <tr><td align="right">Label 3</td></tr>
+            </table>
+        </div> 	
+        <div style="float:left;width:179px;position:relative;" id="1DivT">
+            <table>
+                <tr><td><input type="number"  /></td></tr>
+                <tr><td><input type="number" /></td></tr>
+                <tr><td><input type="number" /></td></tr>
+            </table>
+        </div>
+        <div style="float:left;left:-179px;position:relative;display:none;" id="2DivT">
+            <table>
+                <tr><td><input type="number" /></td></tr>
+                <tr><td><input type="number" /></td></tr>
+                <tr><td><input type="number" /></td></tr>
+            </table>
+        </div>
+    </div>
+</div> 
+    
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="index.js"></script>
