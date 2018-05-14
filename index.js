@@ -22,3 +22,17 @@ $("#next").on('click', function(){
 	$("#2DivT").effect("slide", { direction: "left", duration: 900, mode: "show", queue: false }, function() { $(this).css("left", "0"); });
 	$("#1DivT").effect("slide", { direction: "right", duration: 900, mode: "hide", queue: false });
 });
+
+
+function transitionPage() {
+    // Hide to left / show from left
+    $("#page1").toggle("slide", {direction: "left"}, 500);
+
+    // Show from right / hide to right
+    $("#page2").toggle("slide", {direction: "right"}, 500);
+}
+
+$(document).ready(function() {
+    $('#page1').click(transitionPage);
+    $('#page2').click(transitionPage);
+});
